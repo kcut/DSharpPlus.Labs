@@ -18,7 +18,7 @@ namespace Wumpus.Serialization
         }
 
         public override bool CanWrite(EntityOrId<T> value, PropertyMap propMap)
-            => !propMap.ExcludeDefault || value.Object != default || value.Id != default;
+            => !propMap.ExcludeDefault || value.Object != null || value.Id != default;
 
         public override bool TryRead(ref ReadOnlySpan<byte> remaining, out EntityOrId<T> result, PropertyMap propMap = null)
         {
