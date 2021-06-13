@@ -1,11 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
+    <Import Project="../Wumpus.Net.targets" />
+    
     <PropertyGroup>
         <RootNamespace>DSharpPlus.Labs</RootNamespace>
         <AssemblyName>DSharpPlus.Labs</AssemblyName>
         <PackageTags>discord;discordapp;wumpus;gateway;websocket;rest;api;bot;rogueexception;dsharpplus</PackageTags>
         <Description>The future of DSharpPlus</Description>
-        <VersionPrefix>0.2.2</VersionPrefix>
         <TargetFramework>netstandard2.0</TargetFramework>
     </PropertyGroup>
 
@@ -16,14 +16,5 @@
       <ProjectReference Include="..\Wumpus.Net.Rest\Wumpus.Net.Rest.csproj" />
       <ProjectReference Include="..\Wumpus.Net.Rpc\Wumpus.Net.Rpc.csproj" />
     </ItemGroup>
-
-    <PropertyGroup Condition=" '$(BuildNumber)' == '' ">
-        <VersionSuffix Condition=" '$(VersionSuffix)' != ''">$(VersionSuffix)-dev</VersionSuffix>
-        <VersionSuffix Condition=" '$(VersionSuffix)' == ''">dev</VersionSuffix>
-    </PropertyGroup>
-    <PropertyGroup Condition=" '$(BuildNumber)' != '' And $(IsTagBuild) != 'true' ">
-        <VersionSuffix Condition=" '$(VersionSuffix)' != '' ">$(VersionSuffix)-$(BuildNumber)</VersionSuffix>
-        <VersionSuffix Condition=" '$(VersionSuffix)' == '' ">build-$(BuildNumber)</VersionSuffix>
-    </PropertyGroup>
 
 </Project>
