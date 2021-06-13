@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		nuget.config = nuget.config
 		src\Wumpus.Net.targets = src\Wumpus.Net.targets
+		.github\workflows\nuget-deploy-prerelease.yml = .github\workflows\nuget-deploy-prerelease.yml
+		.github\workflows\nuget-deploy-release.yml = .github\workflows\nuget-deploy-release.yml
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wumpus.Net.Core", "src\Wumpus.Net.Core\Wumpus.Net.Core.csproj", "{3DC16C86-8FB7-45B0-81BE-392772A7C439}"

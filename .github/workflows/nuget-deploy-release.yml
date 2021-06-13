@@ -1,12 +1,14 @@
-name: NuGet Deploy (Prerelease)
+name: NuGet Deploy (Release)
 
 on:
-  push:
-    branches: [ master ]
+  workflow_dispatch:
+
+env:
+  IsTagBuild: 'true'
+  BuildNumber: 0
 
 jobs:
-  publish-prerelease:
-    if: "!contains(github.event.head_commit.message, 'skip ci')"
+  publish-release:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
