@@ -5,7 +5,7 @@ on:
 
 env:
   IsTagBuild: 'true'
-  BuildNumber: 0
+  BuildNumber: "${{ github.run_number }}"
 
 jobs:
   publish-release:
@@ -23,5 +23,10 @@ jobs:
       - name: Pack
         run: |
           dotnet pack src/DSharpPlus.Labs/DSharpPlus.Labs.csproj -c Release -o ./artifacts --no-build
+          dotnet pack src/Wumpus.Net.Bot/Wumpus.Net.Bot.csproj -c Release -o ./artifacts --no-build
+          dotnet pack src/Wumpus.Net.Core/Wumpus.Net.Core.csproj -c Release -o ./artifacts --no-build
+          dotnet pack src/Wumpus.Net.Gateway/Wumpus.Net.Gateway.csproj -c Release -o ./artifacts --no-build
+          dotnet pack src/Wumpus.Net.Rest/Wumpus.Net.Rest.csproj -c Release -o ./artifacts --no-build
+          dotnet pack src/Wumpus.Net.Rpc/Wumpus.Net.Rpc.csproj -c Release -o ./artifacts --no-build
       - name: Upload
         run: dotnet nuget push ./artifacts/*.nupkg --api-key ${{ secrets.NUGET_KEY }} --source https://api.nuget.org/v3/index.json
