@@ -3,9 +3,9 @@
   <PropertyGroup>
     <RootNamespace>Wumpus</RootNamespace>
     <AssemblyName>Wumpus.Net.Core</AssemblyName>
-    <PackageTags>discord;discordapp;wumpus;api;rogueexception</PackageTags>
+    <PackageTags>discord;discordapp;wumpus;api;rogueexception;dsharpplus</PackageTags>
     <Description>A collection of common types and models used by Wumpus.Net packages</Description>
-    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Voltaic.Core" Version="0.2.3-*" />

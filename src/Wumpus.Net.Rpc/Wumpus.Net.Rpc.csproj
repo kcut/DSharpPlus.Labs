@@ -3,9 +3,9 @@
   <PropertyGroup>
     <RootNamespace>Wumpus</RootNamespace>
     <AssemblyName>Wumpus.Net.Rpc</AssemblyName>
-    <PackageTags>discord;discordapp;wumpus;rpc;api;rogueexception</PackageTags>
+    <PackageTags>discord;discordapp;wumpus;rpc;api;rogueexception;dsharpplus</PackageTags>
     <Description>Provides a low-level RPC client for local Discord Clients</Description>
-    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="System.Net.WebSockets.Client" Version="4.3.1" />

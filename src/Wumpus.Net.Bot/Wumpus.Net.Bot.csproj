@@ -3,9 +3,9 @@
   <PropertyGroup>
     <RootNamespace>Wumpus.Bot</RootNamespace>
     <AssemblyName>Wumpus.Net.Bot</AssemblyName>
-    <PackageTags>discord;discordapp;wumpus;gateway;websocket;rest;api;bot;rogueexception</PackageTags>
+    <PackageTags>discord;discordapp;wumpus;gateway;websocket;rest;api;bot;rogueexception;dsharpplus</PackageTags>
     <Description>Provides a minimalistic stateful bot client using Wumpus.Net.Gateway and Wumpus.Net.Rest</Description>
-    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Voltaic.Logging" Version="0.2.1-*" />

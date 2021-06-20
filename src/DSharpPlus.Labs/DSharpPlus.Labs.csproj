@@ -7,6 +7,7 @@
         <PackageTags>discord;discordapp;wumpus;gateway;websocket;rest;api;bot;rogueexception;dsharpplus</PackageTags>
         <Description>The future of DSharpPlus</Description>
         <TargetFramework>netstandard2.0</TargetFramework>
+        <Authors>Kim Chaek University</Authors>
     </PropertyGroup>
 
     <ItemGroup>

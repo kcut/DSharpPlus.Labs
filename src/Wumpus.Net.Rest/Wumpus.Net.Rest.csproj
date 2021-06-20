@@ -3,9 +3,9 @@
   <PropertyGroup>
     <RootNamespace>Wumpus</RootNamespace>
     <AssemblyName>Wumpus.Net.Rest</AssemblyName>
-    <PackageTags>discord;discordapp;wumpus;rest;api;rogueexception</PackageTags>
+    <PackageTags>discord;discordapp;wumpus;rest;api;rogueexception;dsharpplus</PackageTags>
     <Description>Provides a low-level REST client for the Discord API</Description>
-    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="RestEase" Version="1.4.5" />

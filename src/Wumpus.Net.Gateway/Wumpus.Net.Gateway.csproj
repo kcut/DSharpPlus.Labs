@@ -3,9 +3,9 @@
   <PropertyGroup>
     <RootNamespace>Wumpus</RootNamespace>
     <AssemblyName>Wumpus.Net.Gateway</AssemblyName>
-    <PackageTags>discord;discordapp;wumpus;gateway;websocket;api;rogueexception</PackageTags>
+    <PackageTags>discord;discordapp;wumpus;gateway;websocket;api;rogueexception;dsharpplus</PackageTags>
     <Description>Provides a low-level gateway client for the Discord API</Description>
-    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="System.Net.WebSockets.Client" Version="4.3.1" />
